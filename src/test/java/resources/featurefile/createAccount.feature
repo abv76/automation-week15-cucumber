@@ -6,10 +6,10 @@ Feature: Create an Account
     Then I click on Sign In Button
     And  I enter email
     And I click on Create an Account Button
-    And I enter FirstName "Robin"
-    And I enter LastName "Singh"
-    And I enter Password "Robin1234"
-    And I enter Address line "1 Nice Building"
+    And I enter FirstName "Samir"
+    And I enter LastName "Sinha"
+    And I enter Password "Samir1234"
+    And I enter Address line "1 Red Building"
     And I enter City "Maryland"
     And I select state  "Ohio"
     And I enter zipcode "12345"

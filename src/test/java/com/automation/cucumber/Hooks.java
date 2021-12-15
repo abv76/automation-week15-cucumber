@@ -14,7 +14,7 @@ public class Hooks extends Utility {
     @Before
     public void setUP(){
         selectBrowser(PropertyReader.getInstance().getProperty("browser"));
-      Reporter.assignAuthor("Jignesh");
+      Reporter.assignAuthor("Ajay");
     }
     @After
    // public void tearDown(){

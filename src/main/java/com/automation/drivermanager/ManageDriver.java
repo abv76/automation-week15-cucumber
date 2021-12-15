@@ -13,7 +13,8 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.time.Duration;
 
-public class ManageDriver { private static final Logger log = LogManager.getLogger(ManageDriver.class.getName());
+public class ManageDriver {
+    private static final Logger log = LogManager.getLogger(ManageDriver.class.getName());
 
     public static WebDriver driver;
     public String baseUrl = PropertyReader.getInstance().getProperty("baseUrl");

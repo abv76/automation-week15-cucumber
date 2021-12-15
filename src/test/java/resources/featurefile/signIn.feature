@@ -15,24 +15,24 @@ Feature: Sign In on Login Page
     Then I should see error message "<message>"
     Examples:
       | email          | password | message                    |
-      |                | 123456   | An email address required. |
+      |                | abc123   | An email address required. |
       | abcd@gmail.com |          | Password is required.      |
-      | adfdfgfg       | 123456   | Invalid email address.     |
-      | abcd@gmail.com | 123456   | Authentication failed.     |
+      | adfdfgfg       | abc123   | Invalid email address.     |
+      | abcd@gmail.com | abc123   | Authentication failed.     |
 @Regression @Sanity
   Scenario: User should login with Valid Credentials
     Given I am on HomePage
     When  I Click on Sign in link
-    And I enter email "Georgesmith@gmail.com"
-    And I enter password "acd1234"
+    And I enter email "Samirsingh@gmail.com"
+    And I enter password "acd12345"
     And I click on Sign In Button
     Then Sign out link is displayed
 @Regression @Sanity
   Scenario: User should LogOut SuccessFully
     Given I am on HomePage
     When  I Click on Sign in link
-    And I enter email "Georgesmith@gmail.com"
-    And I enter password "acd1234"
+    And I enter email "Samirsingh@gmail.com"
+    And I enter password "acd12345"
     And I click on Sign In Button
     And I Click on Sign out Link
     Then  Sign In Link displayed
